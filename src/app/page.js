@@ -49,7 +49,7 @@ export default function Home() {
           transition={{ duration: 0.6 }}
           className="text-4xl font-bold mb-2"
         >
-          Hi, I'm Haileamlak
+          Hi, I&apos;m Haileamlak
         </motion.h1>
 
         {/* Subtitle */}
