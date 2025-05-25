@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Laptop, Download } from 'lucide-react';
 import Image from 'next/image';
@@ -9,8 +10,43 @@ import ChatBot from '@/components/chatbot';
 import ProjectsSection from '@/components/projectSection';
 import Contact from '@/components/contact';
 import SkillsSection from '@/components/skillSection';
+import Footer from '@/components/footer';
 
 export default function Home() {
+  // Typing effect for name and title
+  const nameText = "Hi, I'm Haileamlak";
+  const titleText = "Software Engineer & Full-Stack Developer";
+  const [nameDisplay, setNameDisplay] = useState('');
+  const [titleDisplay, setTitleDisplay] = useState('');
+
+  useEffect(() => {
+    let nameTimeout, titleTimeout;
+    let i = 0, j = 0;
+
+    function typeName() {
+      if (i <= nameText.length) {
+        setNameDisplay(nameText.slice(0, i));
+        i++;
+        nameTimeout = setTimeout(typeName, 60);
+      } else {
+        typeTitle();
+      }
+    }
+    function typeTitle() {
+      if (j <= titleText.length) {
+        setTitleDisplay(titleText.slice(0, j));
+        j++;
+        titleTimeout = setTimeout(typeTitle, 40);
+      }
+    }
+    typeName();
+    return () => {
+      clearTimeout(nameTimeout);
+      clearTimeout(titleTimeout);
+    };
+    // eslint-disable-next-line
+  }, []);
+
   return (
     <>
       <Navbar />
@@ -46,21 +82,20 @@ export default function Home() {
             </motion.div>
 
             <motion.h1
-              initial={{ opacity: 0, y: -30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2"
+              initial={false}
+              animate={false}
+              className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 whitespace-pre"
             >
-              Hi, I&apos;m Haileamlak
+              {nameDisplay}
+              <span className="animate-pulse text-cyan-400">|</span>
             </motion.h1>
 
             <motion.h2
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3, duration: 0.6 }}
-              className="text-lg sm:text-xl text-gray-400 mb-4"
+              initial={false}
+              animate={false}
+              className="text-lg sm:text-xl text-gray-400 mb-4 whitespace-pre"
             >
-              Software Engineer & Full-Stack Developer
+              {titleDisplay}
             </motion.h2>
 
             <motion.p
@@ -118,6 +153,7 @@ export default function Home() {
       <ChatBot />
       <ProjectsSection />
       <Contact />
+      <Footer />
     </>
   );
 }

@@ -13,43 +13,57 @@ export async function POST(req) {
 Name: Haileamalk Bekele Ayalew
 Location: Addis Ababa, Ethiopia
 Role: Full-Stack Developer
-Experience: 3+ years building scalable web and mobile applications
+Experience: 1+ years building scalable web and mobile applications
 Seeking: Remote full-stack developer opportunities
 
 🎓 Education:
-- BSc in Computer Science – Addis Ababa University (2018–2022)
+- student at Debre Markos University, Ethiopia
+- Bachelor of Software Engineering (Expected Graduation: June 2025)
   - Relevant Coursework: Data Structures, Algorithms, Database Systems, Software Engineering
-  - Capstone Project: Developed a real-time food delivery platform using MERN stack
-  - Achievements: Graduated with distinction, active member of the tech club
+  - Capstone Project: Developed a merchant delivery platform using MERN stack which track orders in real-time.
+  - Achievements: will Gratuate soon with a strong academic record and practical project experience., 
 
 🧠 Skills:
 - Frontend: React.js, Next.js, Tailwind CSS, HTML5, CSS3, JavaScript (ES6+)
 - Backend: Node.js, Express.js, RESTful APIs
-- Databases: MongoDB, Firebase
+- Databases: MongoDB, SQL (PostgreSQL)
 - Mobile: React Native
-- Tools & DevOps: Git, GitHub, Vercel, Netlify, Postman, Docker (basic)
+- Tools & DevOps: Git, GitHub, Vercel, Postman, 
 - State Management: Redux Toolkit, Context API
 - Animations: Framer Motion
 - Testing: Jest (basic), Manual testing
-- Languages: English (fluent), Amharic (native)
+- Languages: English (fluent), Amharic (fluent)
 
 📦 Projects:
-1. **E-Commerce Platform**
-   - Stack: MERN (MongoDB, Express, React, Node.js)
-   - Features: Product listing, cart, payment gateway, admin dashboard
+1. **E-Commerce Platform-shoe shop**
+   - Stack: HTML, CSS, JavaScript
+   - Features: Product listing, cart
    - Role: Full development from scratch
-   - Live: [URL if any]
+   - Live: https://shoe-shope-project-mmpl-53g4o8c5c-haileamlak-bekeles-projects.vercel.app
 
-2. **Portfolio Website**
+2. **AI integrated-Portfolio Website**
    - Stack: Next.js, Tailwind CSS, Framer Motion
    - Features: Animated sections, responsive design, contact form
    - Purpose: Personal branding and project showcase
    - Hosted on: Vercel
 
-3. **Event Booking App**
+3. **Amole wallet app**
    - Platform: React Native
-   - Features: Browse events, book tickets, payment integration
-   - Role: Mobile UI + API integration
+   - Features: Browse events, book tickets, payment integration, transfer to wallet
+   - Role: Mobile app developer + API integration
+   -github: 
+
+   4. **Merchant Delivery Platform**
+    - Stack: MERN (MongoDB, Express.js, React.js, Node.js)
+    - Features: Real-time order tracking, merchant dashboard, user authentication
+    - Role: Full-stack developer
+    - Status: In development, expected completion by may 2025
+    - GitHub:
+5. **movie Website**
+    - Stack: HTML,CSS, JavaScript, free APIs (The Movie Database API)
+    - Features: Tranding Movie listings, search functionality, responsive design, movie recommendations based on user selected movie
+    - Role: Full development from scratch
+    - Live: https://haileamlak-bekele.github.io/HB-movie-center/
 
 🎯 Strengths:
 - Strong UI/UX focus

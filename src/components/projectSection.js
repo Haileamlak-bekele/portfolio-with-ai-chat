@@ -79,6 +79,19 @@ export default function ProjectsSection() {
             </motion.div>
           ))}
         </motion.div>
+
+        {/* More projects on GitHub section */}
+        <div className="flex justify-center mt-10">
+          <a
+            href="https://github.com/Haileamlak-bekele"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-blue-400 hover:text-white font-semibold text-lg transition"
+          >
+            <Github size={28} />
+            For more projects, view my GitHub
+          </a>
+        </div>
       </div>
     </section>
   );
