@@ -52,6 +52,11 @@ export default function Navbar() {
               skills
             </a>
           </li>
+           <li>
+            <a href="#Testimonial" className="hover:text-cyan-400 transition-colors">
+              Testimonial
+            </a>
+          </li>
           <li>
             <a href="#contact" className="hover:text-cyan-400 transition-colors">
               Contact
@@ -79,13 +84,18 @@ export default function Navbar() {
           </a>
         </li>
         <li>
+          <a href="#skills" className="block py-2 hover:text-cyan-400 transition-colors" onClick={() => setMenuOpen(false)}>
+            skills
+          </a>
+        </li>
+        <li>
           <a href="#projects" className="block py-2 hover:text-cyan-400 transition-colors" onClick={() => setMenuOpen(false)}>
             Projects
           </a>
         </li>
         <li>
-          <a href="#skills" className="block py-2 hover:text-cyan-400 transition-colors" onClick={() => setMenuOpen(false)}>
-            skills
+          <a href="#Testimonial" className="block py-2 hover:text-cyan-400 transition-colors" onClick={() => setMenuOpen(false)}>
+            Testimonial
           </a>
         </li>
         <li>

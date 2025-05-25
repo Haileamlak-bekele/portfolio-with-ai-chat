@@ -74,7 +74,9 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="py-16 bg-gray-900 text-white">
+    <section
+    id='Testimonial'
+     className="py-16 bg-gray-900 text-white">
       <div className="max-w-xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-10 text-cyan-400">Testimonials</h2>
         <div className="relative flex flex-col items-center">
