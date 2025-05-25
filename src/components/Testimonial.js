@@ -81,20 +81,20 @@ export default function Testimonials() {
           <div className="w-full min-h-[270px] flex items-center justify-center overflow-hidden">
             <AnimatePresence initial={false} custom={direction}>
               <motion.div
-                key={page}
-                custom={direction}
-                variants={variants}
-                initial="enter"
-                animate="center"
-                exit="exit"
-                transition={{ x: { type: "spring", stiffness: 300, damping: 30 }, opacity: { duration: 0.2 } }}
-                className="bg-gray-800 rounded-xl p-6 shadow-lg flex flex-col items-center text-center w-full"
-              >
-                <UserCircle2 className="w-16 h-16 text-cyan-400 mb-4" />
-                <p className="text-gray-200 mb-4 italic">"{testimonial.quote}"</p>
-                <span className="font-semibold text-cyan-300">{testimonial.name}</span>
-                <span className="text-sm text-gray-400">{testimonial.title}</span>
-              </motion.div>
+  key={page}
+  custom={direction}
+  variants={variants}
+  initial="enter"
+  animate="center"
+  exit="exit"
+  transition={{ x: { type: "spring", stiffness: 300, damping: 30 }, opacity: { duration: 0.2 } }}
+  className="bg-gray-800 rounded-xl p-6 shadow-lg flex flex-col items-center text-center w-full"
+>
+  <UserCircle2 className="w-16 h-16 text-cyan-400 mb-4" />
+  <p className="text-gray-200 mb-4 italic">&quot;{testimonial.quote}&quot;</p>
+  <span className="font-semibold text-cyan-300">{testimonial.name}</span>
+  <span className="text-sm text-gray-400">{testimonial.title}</span>
+</motion.div>
             </AnimatePresence>
           </div>
           <div className="flex gap-4 mt-6">
