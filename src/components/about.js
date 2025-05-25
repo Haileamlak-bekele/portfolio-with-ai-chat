@@ -24,6 +24,7 @@ const aboutSections = [
     content: (
       <>
         Hello! I’m Haileamlak, a dedicated and passionate <span className="font-semibold text-cyan-400">web developer</span> with a strong background in building modern, responsive, and animated websites and applications.
+        i am also a student at Debre Markos University, pursuing a Bachelor of Software Engineering. My journey in tech has been fueled by a love for coding and a desire to create impactful digital experiences.
       </>
     ),
   },
@@ -31,7 +32,7 @@ const aboutSections = [
     title: "My Journey",
     content: (
       <>
-        My journey in tech began with a curiosity for how things work on the web, and over the years, I have honed my skills in both frontend and backend development. I specialize in creating <span className="font-semibold text-cyan-400">sleek user experiences</span> using Next.js and TailwindCSS, and I enjoy transforming complex problems into elegant, user-friendly solutions.
+      My journey in software development began with a fascination for how websites and applications work behind the scenes. I started by experimenting with HTML and CSS, then quickly moved on to JavaScript and modern frameworks. Over time, I built personal projects, contributed to group assignments, and participated in coding challenges, all of which helped me grow my skills and confidence as a developer. Each step has reinforced my passion for problem-solving and creating meaningful digital experiences.
       </>
     ),
   },
@@ -39,7 +40,7 @@ const aboutSections = [
     title: "Education & Projects",
     content: (
       <>
-        My educational background includes a Bachelor of Software Engineering from Debre Markos University, where I gained a solid foundation in software development principles and practices. I have also worked on various projects that showcase my ability to deliver high-quality code and innovative solutions.
+        My educational background includes a Bachelor of Software Engineering from Debre Markos University , where I gained a solid foundation in software development principles and practices. I have also worked on various projects that showcase my ability to deliver high-quality code and innovative solutions.
       </>
     ),
   },
@@ -55,7 +56,7 @@ const aboutSections = [
     title: "Life & Hobbies",
     content: (
       <>
-        Outside of tech, I enjoy photography, listening to music, and spending time with friends and family. My spiritual life is important to me, and I find balance through faith and personal reflection. I also love gaming as a way to relax and spark creativity.
+        Outside of tech, I enjoy photography, listening to hymn, and spending time with friends and family. My spiritual life is important to me, and I find balance through faith and personal reflection. I also love gaming as a way to relax and spark creativity.
       </>
     ),
   },
@@ -68,7 +69,6 @@ const aboutSections = [
     ),
   },
 ];
-
 export default function About() {
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -88,10 +88,11 @@ export default function About() {
         About Me
       </motion.h2>
 
-      <div className="flex flex-col-reverse md:flex-row items-center md:items-start gap-10 md:gap-20 max-w-5xl mx-auto">
-        {/* Left: Picture with short text */}
+      {/* Responsive layout: image above on small screens, side-by-side on md+ */}
+      <div className="flex flex-col md:flex-row-reverse items-center md:items-start gap-10 md:gap-20 max-w-5xl mx-auto">
+        {/* Image section */}
         <motion.div
-          className="md:w-1/2 flex flex-col items-center justify-center"
+          className="w-full md:w-1/2 flex flex-col items-center justify-center mb-8 md:mb-0"
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
@@ -109,9 +110,9 @@ export default function About() {
           </span>
         </motion.div>
 
-        {/* Right: Collapsible Text content */}
+        {/* Collapsible Text content */}
         <motion.div
-          className="md:w-1/2 flex-shrink space-y-4 sm:space-y-6 text-base sm:text-lg leading-relaxed"
+          className="w-full md:w-1/2 flex-shrink space-y-4 sm:space-y-6 text-base sm:text-lg leading-relaxed"
           variants={containerVariants}
         >
           {aboutSections.map((section, idx) => (
