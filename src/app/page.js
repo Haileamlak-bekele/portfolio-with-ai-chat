@@ -11,6 +11,7 @@ import ProjectsSection from '@/components/projectSection';
 import Contact from '@/components/contact';
 import SkillsSection from '@/components/skillSection';
 import Footer from '@/components/footer';
+import Testimonials from '@/components/Testimonial';
 
 export default function Home() {
   // Typing effect for name and title
@@ -152,6 +153,7 @@ export default function Home() {
       <SkillsSection />
       <ChatBot />
       <ProjectsSection />
+      <Testimonials />
       <Contact />
       <Footer />
     </>
